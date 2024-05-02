@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Poppins&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+     
+}
+
+body{
+    background-color: #F0F0F7;
+    padding-bottom: 2%;
+}
+
+header{
+    background-color: #8257E5;
+    padding-top: 1%;
+    width: 100%;
+}
+
+.seta{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 10%;
+    
+}
+
+.seta p{
+   
+    font-family: 'Potta one';
+    font-size: 14px;
+    color: white;
+}
+
+.tituloPrincipal{
+    margin-top: 30px;
+    margin-left: 27.6%;
+    font-family: Archivo;
+    font-size: 42px;
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+#nomeDosSeletores{
+    display: flex;
+    font-size: 14px;
+    font-family: Poppins;
+    color: #D4C2FF;
+    justify-content: space-between;
+    width: 36.4%;
+    margin-top: 3%;
+    margin-left: 27.9%;
+}
+
+.barraDeSelecionar{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.7%;
+}
+
+.selecaoDeItens{
+    width: 30%;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #FAFAFC;
+    border: solid 1px #E6E6F0;
+}
+
+.profs{
+    margin-top: 2.5%;
+    width: 45%;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.parteFotoENome{
+    display: flex;
+    padding: 3.5%;
+    
+    align-items: center;
+    
+}
+
+.fotoProfs{
+    border-radius: 50%;
+}
+
+.profsNome{
+    margin-left: 3%;
+}
+
+.nomeDoProfs{
+    font-size: 20px;
+    font-family: Archivo;
+    font-weight: 700;
+    color: #32264D;
+}
+
+.materiaDoProfs{
+    margin-top: 1%;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+}
+.parteTexto{
+    padding: 1% 9% 2% 3.5%;
+}
+
+.parteTexto p{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    color: #6A6180;
+}
+
+.texto1{
+    margin-bottom: 2.5%;
+}
+
+.parteBotaoEPreco{
+    display: flex;
+    border-top: solid 2px #E6E6F0;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #FAFAFC;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.parteDoPrecoPorHora{
+    display: flex;
+    align-items: center;
+    width: 48%;
+    margin-left: 3.5%;
+}
+
+.precoHora{
+    color: #9C98A6;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.preco{
+    color: #8257E5;
+    font-family: Archivo;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.botao{
+    margin-right: 5%;
+    font-family: Archivo;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #04D361;
+    border-radius: 15px;
+    border: solid 1px;
+    width: 25.7%;
+    padding: 3%;
+    height: 53px;
+    
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+

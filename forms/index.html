@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorp forms</title>
+    <link rel="shortcut icon" href="/img/zorp.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=round -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=sharp -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=twotone -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topo">
+        <div class="z">
+            <a href="../Home/index.html">
+                <img src="/img/Header.png" alt="">
+            </a>
+            <p>PROFS</p>
+        </div>
+
+        <div class="n">
+            <h1>Que incrível que você <br>quer dar aulas.</h1>
+            <p class="t">O primeiro passo, é preencher esse <br>formulário de inscrição.</p>
+        </div>
+    </div>
+
+    <form>
+        <fieldset>
+            <div class="grupo">
+                <div class="titulo">
+                    <h2>Seus Dados</h2>
+                    <hr>
+                    <br>
+                </div>
+
+                <div>
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" required>
+                </div>
+
+                <div>
+                    <div class="whats">
+                        <label for="image">Link da sua foto</label>
+                        <label for="image" id="img" class="sub">&nbsp;(comece com //http)</label>
+                    </div>
+
+                    <input type="url" id="image" required>
+                </div>
+
+                <div>
+                    <div class="whats">
+                        <label for="Whatsapp">Whatsapp </label>
+                        <label class="sub" >&nbsp; (somente números)</label>
+                    </div>
+
+                    <input type="number" id="whatsapp" required>
+                </div>
+
+                <div>
+                    <label for="biografia">Biografia</label>
+                    <textarea name="biografia" id="biografia"  rows="7" required></textarea>
+                </div>
+
+                <div class="titulo">
+                    <h2>Sobre a aula</h2>
+                    <hr>
+                    <br>
+                </div>
+
+                <div>
+                    <label for="materia">Materia</label>
+                    <select name="materia" id="materia" required>
+                        <option selected disabled value="">Selecione qual você quer ensinar</option>
+                        <option value="geografia">Geografia</option>
+                        <option value="biologia">Biologia</option>
+                        <option value="matematica">Matematica</option>
+                        <option value="historia">Historia</option>
+                        <option value="quimica">Quimica</option>
+                        <option value="educacaoFisica">Educação Fisica</option>
+                        <option value="fisica">Fisica</option>
+                        <option value="filosofia">Filosofia</option>
+                        <option value="sociologia">Sociologia</option>
+                        <option value="portugues">Português</option>
+                        <option value="ingles">Inglês</option>
+                    </select>
+                </div>
+
+                <div>
+                    <div class="whats">
+                        <label for="custo">Custo da sua hora por aula &nbsp;</label>
+                        <label class="sub">(em R$)</label>
+                    </div>
+
+                    <input type="number" id="dinheiro" required>
+                </div>
+
+                <input type="file" name="" id="">
+                <div class="titulo">
+                    <h2>Horários disponíveis</h2>
+                    <p>Novo horário</p>
+                    <hr>
+                    <br>
+                </div>
+
+                <div id="diasDasSemanas">
+                    <div id="selecioneODia" class="semanasDasAte">
+                        <label for="semana">Dia da semana</label>
+                        <select name="semana" id="semana" required>
+                            <option selected disabled value="">Selecione o dia</option>
+                            <option value="domingo">Domingo</option>
+                            <option value="segunda">Segunda</option>
+                            <option value="terca">Terça</option>
+                            <option value="quarta">Quarta</option>
+                            <option value="quinta">Quinta</option>
+                            <option value="sexta">Sexta</option>
+                            <option value="sabado">Sábado</option>
+                        </select>
+                    </div>
+                    <div id="das" class="semanasDasAte">
+                        <label for="das">Das</label>
+                        <input type="time" id="timeComeco" required>
+                    </div>
+                    <div id="ate" class="semanasDasAte">
+                        <label for="ate">Até</label>
+                        <input type="time" id="timeFim" required>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="fim">
+                <div id="atencao">
+                <img src="/img/Atenção.png" alt="atenção" id="imgAtencao">
+                <p id="pAtencao">Importante! <br> Preencha todos os dados</p>
+                </div>
+                <button onclick="salvarProfessor()" class="botao" type="submit">Salvar cadastro</button>
+            </div>
+        </fieldset>
+    </form>
+    <div class="espaco">
+         
+    </div>
+    <script src="/professores/main.js"></script>
+</body>
+
+</html>

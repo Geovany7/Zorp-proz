@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/zorp.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="seta">
+            <a href="/Home/index.html">
+                <img src="/img/Header.png" alt="seta">
+            </a>
+            <p>Proffy</p>
+        </div>
+        <h1 class="tituloPrincipal">Estes são os <br>
+        profs disponíveis. </h1>
+        <div id="nomeDosSeletores">
+            <p>Matéria</p>
+            <p>Dia Da semana</p>
+            <p>Horário</p>
+        </div>
+    </header>
+    <main id="main">
+        <div class="barraDeSelecionar">
+            <select name="materia" id="materia" class="selecaoDeItens" required on>
+                <option selected disabled value=""> </option>
+                <option>Geografia</option>
+                <option>Biologia</option>
+                <option>Matematica</option>
+                <option>Historia</option>
+                <option>Quimica</option>
+                <option>Educação Fisica</option>
+                <option>Fisica</option>
+                <option>Filosofia</option>
+                <option>Sociologia</option>
+                <option>Português</option>
+                <option>Inglês</option>
+            </select>
+
+            <select name="semana" id="semana" class="selecaoDeItens" required>
+                <option selected disabled value=""> </option>
+                <option>Domingo</option>
+                <option>Segunda</option>
+                <option>Terça</option>
+                <option>Quarta</option>
+                <option>Quinta</option>
+                <option>Sexta</option>
+                <option>Sábado</option>
+            </select>
+
+            <select name="horario" class="selecaoDeItens" id="horario">
+                <option selected disabled value=""> </option>
+                <option value="8as12">8h as 12h</option>
+                <option value="14as18">14 as 18</option>
+                <option value="19as23">19 as 23</option>
+            </select>
+        </div>
+        
+        
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
